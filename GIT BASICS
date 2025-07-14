@@ -1,0 +1,108 @@
+ 	change git username and  mail globally(for all repositories):
+
+git config --global user.name "John Doe"
+      git config --global user.email "john.doe@example.com"
+
+	verify the changes:  check global configuration
+git config --global --list
+
+
+ 	change git username locally(for a specific repository):
+
+cd /path/to/your/repository
+git config user.name "Jane Smith"
+git config user.email "jane.smith@example.com"
+
+	verify the changes: check local configuration
+ git config --list
+
+
+	GIT BASIC COMMANDS:
+
+	cloning a repository:
+      git clone <repository-url>
+
+	Check status:
+      git status
+ 
+	add changes to staging area:
+      git add . / git add <file>
+
+	commit changes: 
+      git commit -m "Your commit message"
+
+	push changes to remote repository: 
+      git push origin <branch-name>
+
+	pull changes from a remote repository: 
+      git pull origin <branch-name>
+
+	create a new branch: 
+      git branch <branch-name>
+
+	switch between branches:
+      git checkout <branch-name>
+
+	merge a branch: 
+git merge <branch-name>
+
+	create a new commit and push:
+      git commit -m "Your commit message"
+git push
+
+
+
+	GIT SPECIFIED COMMANDS:
+
+	add remote repository:
+ git remote add origin <repository-url>
+
+	view remotes: 
+git remote -v
+
+
+	USEFUL GIT COMMANDS FOR ADVANCED USERS:
+
+	stash changes:
+ git stash
+
+	revert a commit: 
+git revert <commit-hash>
+
+	reset changes: 
+git reset --hard
+
+	view git log: 
+git log
+
+	tagging a commit:
+ git tag <tag-name> <commit-hash>
+
+	git worktrees: 
+git worktree add <path> <branch-name>
+
+	git restore: 
+git restore <file>
+
+	git sparse checkout:  
+git sparse-checkout set <folder-name> {new in git 2.25}
+
+	create a new repository:
+ gh repo create <repo-name> --public
+
+	create pull request:
+ gh pr create --title "Add New Feature" --body "Description of feature" --base main --head feature-branch
+
+	list all issues: 
+gh issue list
+
+	check out a pull request:
+ gh pr checkout <pr-number>
+
+	github actions: 
+gh workflow run <workflow-name.yml>
+
+	github sponsors: 
+gh sponsor add <username> --amount <amount-per-month>
+
+
